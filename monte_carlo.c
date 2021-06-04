@@ -38,6 +38,20 @@ int main(void) {
     }
   }
 }
+float mc_pi(int n){
+   int c1=0,c2=0;
+    while(n--){
+        float a=frandom();
+        float b=frandom();
+       float  d=sqrt(a*a+b*b);
+        if(d<=1){
+            c1++;
+        }
+        c2++;
 
+
+    }
+    return (float)4*c1/c2;
+}
 
 
